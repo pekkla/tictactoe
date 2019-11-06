@@ -22,9 +22,15 @@ docker build .
 docker run -d -p 8089:8089 [IMAGE-ID]
 
 ### Play the game
- - Start new game: POST http://localhost:8089/start (returns ID)
- - Example body: {"name":"Lauri", "character":"X"}
+ - Start new game: 
+ 
+ curl -d '{"name":"Lauri", "character":"X"}'  -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8089/start -w "\n"
+ 
  - Make a move: POST http://localhost:8089/game/[ID]/move
- - Example body: {"row":"A", "col":"C"}
+ 
+ curl -d '{"row":"A", "col":"C"}'  -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost:8089/game/ID/move -w "\n"
+ 
  - Check the game status: GET http://localhost:8089/game/[GAME-ID]
+ 
+ curl -H "Accept: text/plain" -X GET http://localhost:8089/game/[GAME-ID] -w "\n"
 
