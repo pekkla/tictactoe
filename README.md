@@ -1,10 +1,10 @@
 =========
 
-## Tic Tac Toe REST app (prototype) 
+## Tic Tac Toe simple REST app proto
 ### Author: Lauri Pekkala 
 
 ### Intro
-This app is a REST API for playing Tic Tac Toe with computer. Computer places tokens randomly so its quite easy to win :)
+This app is a simple REST API proto for playing Tic Tac Toe with computer. Computer places tokens randomly so its quite easy to win :)
 
 ### Technical info
 The code supports grid sizes from 3-9 (also bigger if modified)
