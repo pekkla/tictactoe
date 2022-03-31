@@ -13,7 +13,7 @@
         <java.release>11</java.release>
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
         <lombok.version>1.18.4</lombok.version>
-        <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
+        <spring-boot.version>2.5.12</spring-boot.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <embedded-redis.version>0.6</embedded-redis.version>
     </properties>
